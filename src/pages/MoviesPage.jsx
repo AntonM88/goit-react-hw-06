@@ -27,6 +27,7 @@ const MoviesPage = () => {
     };
     fetchData();
   }, [query]);
+
   return <SearchMovie />;
 };
 export default MoviesPage;

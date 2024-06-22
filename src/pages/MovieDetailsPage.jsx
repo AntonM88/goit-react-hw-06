@@ -15,7 +15,7 @@ const MovieDetailsPage = () => {
       setIsLoading(true);
       try {
         const data = await fetchOneMovie(moviesId);
-        console.log(data);
+
         setMovie(data);
       } catch (error) {
         setError(error.message);
