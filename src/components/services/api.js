@@ -32,7 +32,7 @@ export const searchMovie = async (query) => {
     },
   });
 
-  return data;
+  return data.results;
 };
 
 export const fetchCast = async (id) => {

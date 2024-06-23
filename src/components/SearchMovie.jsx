@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
-import MoviesPage from "../pages/MoviesPage";
-import { searchMovie } from "./services/api";
 
 const SearchMovie = () => {
   const [movie, setMovie] = useState("");
@@ -9,19 +7,16 @@ const SearchMovie = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setSearchParams({ movie });
-    console.log(movie);
-  };
-
-  const onHandleChange = (e) => {
-    setMovie(e.target.value);
+    setSearchParams({ query: movie });
   };
 
   return (
     <>
       <form onSubmit={handleSubmit}>
         <input
-          onChange={onHandleChange}
+          onChange={(e) => {
+            setMovie(e.target.value);
+          }}
           type="text"
           placeholder="Search movie..."
           className="input input-bordered input-info w-full max-w-xs"

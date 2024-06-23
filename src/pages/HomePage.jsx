@@ -19,6 +19,9 @@ const HomePage = () => {
   }, []);
   return (
     <>
+      <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-center text-indigo-600 tracking-wide">
+        Trending today
+      </h2>
       <FilmList movies={movies} />
     </>
   );
