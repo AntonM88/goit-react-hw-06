@@ -13,7 +13,9 @@ const MovieInfo = ({
   const goBackRef = useRef(location?.state || "/");
   return (
     <div className="">
-      <Link to={goBackRef.current}>Go Back</Link>
+      <Link className="btn" to={goBackRef.current}>
+        Go Back
+      </Link>
       <img
         className="w-80"
         src={`https://image.tmdb.org/t/p/w500/${poster_path}`}
@@ -26,10 +28,14 @@ const MovieInfo = ({
 
       <ul>
         <li>
-          <NavLink to="cast">Cast</NavLink>
+          <NavLink className="text-sky-500 font-bold underline" to="cast">
+            Cast
+          </NavLink>
         </li>
         <li>
-          <NavLink to="reviews">Review</NavLink>
+          <NavLink className="text-sky-500 font-bold underline" to="reviews">
+            Review
+          </NavLink>
         </li>
       </ul>
       <Outlet />
