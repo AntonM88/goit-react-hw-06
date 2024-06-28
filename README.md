@@ -1,7 +1,1 @@
-goit-react-hw-05
-
-Ключ API
-1de1dfdf9e705f64cc6789aed75b4ee7
-
-Ключ доступа к API
-eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxZGUxZGZkZjllNzA1ZjY0Y2M2Nzg5YWVkNzViNGVlNyIsInN1YiI6IjY2NzJhNTI2ZjBlMzRjM2M4YzM0NWY1ZCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.JSfTCIPUi7abPyGAl5dMDHdO4FoRbFrKYzuIi8F5IxQ
+goit-react-hw-06
